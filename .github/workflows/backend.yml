@@ -34,4 +34,4 @@ jobs:
           environment_name: 'brati-trust-prod'
           version_label: ${{ github.sha }}
           region: 'ap-south-2'
-          file: build/libs/*.jar
+          deployment_package: build/libs/*.jar
