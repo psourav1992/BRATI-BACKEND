@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/volunteers")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "${cors.allowed-origins}")
 public class VolunteerController {
     private final VolunteerService service;
 

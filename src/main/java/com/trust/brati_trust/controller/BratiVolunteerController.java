@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bratiVolunteers")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "${cors.allowed-origins}")
 public class BratiVolunteerController {
     private final BratiVolunteerService service;
 

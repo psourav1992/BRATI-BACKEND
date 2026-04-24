@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "${cors.allowed-origins}")
 public class AdminController {
 
     private final NewsService newsService;
